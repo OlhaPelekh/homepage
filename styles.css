@@ -12,8 +12,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #002aff45;
+    --text-decoration-color: #0095ff;
 }
 
 .container {
@@ -67,6 +67,22 @@ body {
         margin-right: 0;
     }
 }
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+    scroll-snap-align: start;
+  }
+  
+  .section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -124,8 +140,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
