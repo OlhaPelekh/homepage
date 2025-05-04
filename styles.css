@@ -12,8 +12,8 @@ body {
     --secondary-text-color: #5c5c62;
     --durability-text-color: #6a737d9c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #002aff45;
+    --text-decoration-color: #0095ff;
 }
 
 .container {
@@ -66,6 +66,22 @@ body {
     .experiences {
         margin-right: 0;
     }
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+    scroll-snap-align: start;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-info__header,
@@ -124,8 +140,8 @@ body {
 
 .contact-info__avatar {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border: 3px solid;
     border-color: var(--text-decoration-color);
@@ -141,6 +157,7 @@ body {
     width: 30px;
     display: flex;
     justify-content: center;
+    margin-left: 10px;
 }
 
 .intro__icon {
@@ -261,3 +278,93 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+.contacts__block {
+    width: 100%;
+    text-align: start;
+    margin-left: 10px;
+}
+
+.contact-links a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+}
+
+.contact-links__item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.contacts__image {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.contacts__image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#imageContainer {
+    display: none;
+}
+
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.blue-button:active {
+    background-color: #004095;
+    transform: scale(0.98);
+}
+
+#own-info {
+    background-image: url('./assets/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #intro {
+    background-image: url('./assets/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #skills {
+    background-image: url('./assets/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #education {
+    background-image: url('./assets/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #contacts {
+    background-image: url('./assets/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+  }
