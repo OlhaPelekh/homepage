@@ -337,3 +337,33 @@ body {
     background-color: #004095;
     transform: scale(0.98);
 }
+
+#own-info {
+    background-image: url('./assets/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #intro {
+    background-image: url('./assets/bg2.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #skills {
+    background-image: url('./assets/bg3.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #education {
+    background-image: url('./assets/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #contacts {
+    background-image: url('./assets/bg5.jpg');
+    background-size: cover;
+    background-position: center;
+  }
