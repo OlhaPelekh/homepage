@@ -277,3 +277,36 @@ body {
 .additional-info__languages-item {
     color: var(--secondary-text-color);
 }
+
+.contacts__block {
+    width: 100%;
+    text-align: start;
+    margin-left: 10px;
+  }
+  
+  .contact-links a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+  }
+  
+  .contact-links a:hover {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+  }
+  
+  .contact-links__item {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  .contacts__image {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+  }
+  
+  .contacts__image img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
