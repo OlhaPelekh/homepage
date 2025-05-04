@@ -77,12 +77,12 @@ body {
     transform: translateY(100px);
     transition: opacity 1s ease, transform 1s ease;
     scroll-snap-align: start;
-  }
-  
-  .section.visible {
+}
+
+.section.visible {
     opacity: 1;
     transform: translateY(0);
-  }
+}
 
 .contact-info__header,
 .contact-info__sub-header {
@@ -282,31 +282,58 @@ body {
     width: 100%;
     text-align: start;
     margin-left: 10px;
-  }
-  
-  .contact-links a {
+}
+
+.contact-links a {
     color: var(--secondary-text-color);
     text-decoration: none;
-  }
-  
-  .contact-links a:hover {
+}
+
+.contact-links a:hover {
     text-decoration: underline;
     color: var(--primary-text-color);
-  }
-  
-  .contact-links__item {
+}
+
+.contact-links__item {
     margin: 10px 0;
     font-size: 1.1rem;
-  }
-  .contacts__image {
+}
+
+.contacts__image {
     margin-top: 30px;
     display: flex;
     justify-content: start;
-  }
-  
-  .contacts__image img {
+}
+
+.contacts__image img {
     max-width: 50%;
     height: auto;
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
+}
+
+#imageContainer {
+    display: none;
+}
+
+.blue-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+}
+
+.blue-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.blue-button:active {
+    background-color: #004095;
+    transform: scale(0.98);
+}
